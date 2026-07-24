@@ -9,7 +9,7 @@ gcd(x,x+4)=gcd(x,4)
 
 # gcd(kx,ky)=∣k∣⋅gcd(x,y), 当gcd(x, y) == 1时
 
-![[Pasted image 20260406205731.png]]
+![](image/Pasted%20image%2020260406205731.png)
 即如果给定一个数组b，和数组a，如果数组a满足ai = bi * b i + 1
 则gcd(ai,ai+1)=bi+1⋅gcd(bi,bi+2) .
 
@@ -26,7 +26,7 @@ gcd(x,x+4)=gcd(x,4)
 - 所有可达位置 = **gcd (n,k) 的倍数**
 - 回到起点的最小步数 = **n / gcd(n,k)**， 即周期 T =  **n / gcd(n,k)**
 - 当且仅当 **gcd(n,k)=1** 时，遍历全部 n 个点，周期为 n。
-![[Pasted image 20260409112150.png]]
+![](image/Pasted%20image%2020260409112150.png)
 总的来说，如果我们在一个长度为n的循环里边，每次的步长为k，
 那么
 - 走的路径是一个 周期为 **n / __gcd(n, k)** 的循环
@@ -39,7 +39,7 @@ gcd(x,x+4)=gcd(x,4)
 # 要穷尽一个环n，那么步长k 一定要满足__gcd(n, k) == 1
 
 [Problem - C - Codeforces](https://codeforces.com/contest/2217/problem/C)
-![[Pasted image 20260409115433.png]]
+![](image/Pasted%20image%2020260409115433.png)
 
 ```c++
 void solve() {

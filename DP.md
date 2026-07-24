@@ -1,7 +1,7 @@
 # 以当前数字结尾的子序列 的最大长度
 注：当前数字是子序列的最后一个数字
 [D-Longest Subsequence_牛客周赛 Round 131](https://ac.nowcoder.com/acm/contest/127703/D)
-![[Pasted image 20260319133803.png]]```
+![](image/Pasted%20image%2020260319133803.png)```
 dfs(i, x) 表示 前i个元素，以数字x结尾的子序列 的最大长度
 
 状态转移：dfs(i, x) = 前i个元素中
@@ -45,7 +45,7 @@ void solve() {
 容易和贪心混淆
 
 [D-小彩的数组选数_牛客周赛 Round 114](https://ac.nowcoder.com/acm/contest/119273/D)
-![[Pasted image 20260324222950.png]]```
+![](image/Pasted%20image%2020260324222950.png)```
 
 dfs(i) 表示前i元素进行操作，最大的得分
 
@@ -94,7 +94,7 @@ void solve() {
 # 枚举DP
 
 [Problem - 2195C - Codeforces](https://codeforces.com/problemset/problem/2195/C?adcd1e=caf4fbu7vzg3rn&csrf_token=6b753960576d8eced608ab6546b27f1e&__cf_chl_tk=3WSxv5UKvd.U8k.vpOn5xI.Wz877gBNbo55N1UY.wdc-1774587398-1.0.1.1-ovvXpq6qX7vMoWh3Y4U.1SPDzHaCRS0SUXfvCBM62qY)
-![[Pasted image 20260327125943.png]]·
+![](image/Pasted%20image%2020260327125943.png)·
 题意是：给定一个序列(数组)a，对于每一个相邻的数，都需要满足相邻不相等 或者 相邻 之和不为7
 每次操作可以选任意一个数使之变为1-6 中的任意一个数 。求使之满足的最小操作次数
 
@@ -132,7 +132,7 @@ void solve() {
 我们也可以采用DP，
 定义dfs(i, j) 表示前i个数中，以数字j结尾，其修改的最小次数(最小花费)
 那么i - 1 的时候，有四个与之相邻的数字可以，取最小，再考虑当前的数字是否需要花费
-![[Pasted image 20260327130621.png]]·
+![](image/Pasted%20image%2020260327130621.png)·
 ```c++
 void solve() {
     int n; cin >> n;
@@ -234,7 +234,7 @@ int main(){
 
 # 线性DP
 [D-小苯的序列涂色_牛客周赛 Round 137](https://ac.nowcoder.com/acm/contest/130843/D)
-![[Pasted image 20260329220515.png]]
+![](image/Pasted%20image%2020260329220515.png)
 ```c++
 void solve() {
 	int n; cin >> n;
@@ -271,7 +271,7 @@ dp(i)表示 将前i个整数 染成红色的最小代价
 
 **无序整数分拆 DP + 异或和状态维护
 [Problem - G - Codeforces](https://codeforces.com/gym/686522/problem/G)
-![[Pasted image 20260420131511.png]]
+![](image/Pasted%20image%2020260420131511.png)
 题意： 给 n p m, 要求 和为 n - p ，异或和为p 的方案数，其结果 % m
 ## 代码
 
@@ -417,7 +417,7 @@ dp[j][xr] += dp[j - i][xr ^ i];
 # 转化型 DP
 把「最小修改成本」转化成「最大保留收益」
 [Problem - G - Codeforces](https://codeforces.com/contest/2167/problem/G)
-![[Pasted image 20260514165413.png]]
+![](image/Pasted%20image%2020260514165413.png)
 ```c++
 void ap() {
 	int n; cin >> n;
@@ -452,7 +452,7 @@ void ap() {
 
 # 子序列计数型DP
 [D-小红的子序列计数_牛客周赛 Round 146](https://ac.nowcoder.com/acm/contest/135882/D)
-![[Pasted image 20260602150930.png]]
+![](image/Pasted%20image%2020260602150930.png)
 ```c++
 void ap() {
 	int n; cin >> n;
@@ -476,7 +476,7 @@ void ap() {
 	return ;
 }
 ```
-![[Pasted image 20260602151025.png]]
+![](image/Pasted%20image%2020260602151025.png)
 ```c++
 /*
 分析与思路推导
@@ -538,8 +538,8 @@ signed main(){
 # 概率DP 、逆元、费马小定理
 [I-冰淇淋大危机_第七届武汉纺织大学ACM程序设计竞赛(同步赛）](https://ac.nowcoder.com/acm/contest/136171/I)
 
-![[Pasted image 20260607151514.png]]
-![[Pasted image 20260607151555.png]]
+![](image/Pasted%20image%2020260607151514.png)
+![](image/Pasted%20image%2020260607151555.png)
 ```c++
 const int MOD = 998244353;
 
@@ -625,12 +625,12 @@ $$b^{-1} \equiv b^{p-2} \pmod p$$
 
 # 期望 DP / 状态机生成函数
 [B-薛定谔的迷你哆啦_第七届武汉纺织大学ACM程序设计竞赛(同步赛）](https://ac.nowcoder.com/acm/contest/136171/B)
-![[Pasted image 20260607185733.png]]
+![](image/Pasted%20image%2020260607185733.png)
 
 
 # 子序列DP 、 质因数分解 、 路径还原
 [D-小红的子序列_牛客周赛 Round 147](https://ac.nowcoder.com/acm/contest/136224/D)
-![[Pasted image 20260608135300.png]]
+![](image/Pasted%20image%2020260608135300.png)
 ```c++
 const int MX = 1e6 + 5;
 vector<int> mn_prime(MX, 0), primes;

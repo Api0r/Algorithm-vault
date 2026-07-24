@@ -1,7 +1,7 @@
 # set模拟打怪 | 二分
 
 [Problem - F - Codeforces](https://codeforces.com/contest/1985/problem/F)
-![[Pasted image 20260402165410.png]]
+![](image/Pasted%20image%2020260402165410.png)
 时间复杂度O(n * log n)
 - 每个 `set` 操作复杂度：**O(log n)**
 - 每次攻击至少打一点伤害，最多n次循环
@@ -90,7 +90,7 @@ void solve() {
 # 进制 | 预处理
 
 [Problem - E - Codeforces](https://codeforces.com/contest/1999/problem/E)
-![[Pasted image 20260404165336.png]]
+![](image/Pasted%20image%2020260404165336.png)
 每次可以选择两个数，进行乘3 和 除以 3 的操作，这个操作可以看成是
 
 ```c++
@@ -137,7 +137,7 @@ signed main() {
 
 # 回文串palindrome | mex
 [Problem - D - Codeforces](https://codeforces.com/contest/2227/problem/D)
-![[Pasted image 20260501202417.png]]
+![](image/Pasted%20image%2020260501202417.png)
 由于mex的性质，所以每一个回文串必须含0，才会使得mex最大
 
 所以我们只需要看0得位置，有三种情况
@@ -215,7 +215,7 @@ signed main() {
 # 后缀最小suf_mn | 贪心
 
 [Problem - E - Codeforces](https://codeforces.com/contest/2227/problem/E)
-![[Pasted image 20260501200741.png]]
+![](image/Pasted%20image%2020260501200741.png)
 记录每个位置的后缀最小值，那么这一列可以移动的数量就是ai - suf_mn[i]
 我们可以先记录一个sum为数组和，然后计算suf_mn 的时候减去，最后的sum值就是可以移动的数量
 
@@ -227,7 +227,7 @@ tips:**后缀数组从左到右是 非递减的。**
 在一个非递减的数组中删除一个cube，然后再进行重力shift，使得move的cube数量最大化
 
 因为是非递减的，所以我们发现，只有在删除连续的相等的块的最右边的块的时候，才会产生新的move的cube，move的数量是连续快的长度cnt - 1
-![[Pasted image 20260501202315.png]]
+![](image/Pasted%20image%2020260501202315.png)
 
 所以问题变成，计算连续的最大的长度cnt
 
@@ -274,16 +274,16 @@ void solve() {
 
 # 数学 | 猜.推 公式
 [Problem - C - Codeforces](https://codeforces.com/contest/2220/problem/C)
-![[Pasted image 20260503001119.png]]
+![](image/Pasted%20image%2020260503001119.png)
 首先，我们最先想到的是，一个n × m 的gird ，其使用的segments的数量是m×(n + 1) + n × (m + 1)，即2mn + n + m
 显然，这个数量需要等于给定的数量，所以有p + 2q = 2mn + m + n;
 
 这里还有一个关键的贪心推导公式，即p >= abs(n - m)
 这里给出答案的proof
 同余没看懂，但是构造可以看下面的图例理解，即m, n的高度差需要单个的segment去弥补
-![[Pasted image 20260503001932.png]]
+![](image/Pasted%20image%2020260503001932.png)
 然后这里的枚举也很有意思，有数学推导的美
-![[Pasted image 20260503002206.png]]
+![](image/Pasted%20image%2020260503002206.png)
 - 首先假设m >= n
 - 然后代入公式有 n <= sqrt(p / 2 + q)
 - 所以枚举n的范围就有了
@@ -310,11 +310,11 @@ void ap() {
 
 # 贪心 | exchange argument
 [Problem - B - Codeforces](https://codeforces.com/contest/2210/problem/B)
-![[Pasted image 20260504203746.png]]
+![](image/Pasted%20image%2020260504203746.png)
 
 题意： 
 给一个n，一个permutation 数组p，然后进行下面的操作
-![[Pasted image 20260504204510.png]]
+![](image/Pasted%20image%2020260504204510.png)
 ```c++
 void ap() {
 	int n; cin >> n;
@@ -329,22 +329,22 @@ void ap() {
 	return ;
 }
 ```
-![[Pasted image 20260506161805.png]]
+![](image/Pasted%20image%2020260506161805.png)
 
 
 # 数学 | GCD，局部 推广到 全局
 [Problem - C1 - Codeforces](https://codeforces.com/contest/2210/problem/C1)
-![[Pasted image 20260504211532.png]]
+![](image/Pasted%20image%2020260504211532.png)
 
 题意：给一个数组a，对每一个下标，最多只可以进行一次操作，且每次操作一定使ai减小，要求最大可操作的次数
 每次操作之后都需要满足 **任意连续区间的gcd和原来的相等**
 
 局部必要性： 我们至少需要使相邻的元素在操作之后满足
 可推出全局
-![[Pasted image 20260504212216.png]]
+![](image/Pasted%20image%2020260504212216.png)
 
 所以我们只需要使相邻的数的gcd满足就可以
-![[Pasted image 20260504212312.png|697]]
+![](image/Pasted%20image%2020260504212312.png)
 对于一个数ai，改变其会影响到A = gcd(ai, ai - 1),  B = gcd(ai, ai + 1)
 我们需要改变之后，这两个gcd都不变， 那么改变之后的 数字a，必须含有因子A和B，又因为操作一定使其变小，所以贪心的想，既含有A因子又含有B因子的数是什么呢？
 就是lcm(A， B),所以如果lcm < ai，那么就可以操作
@@ -377,7 +377,7 @@ void ap() {
 
 # 数学 | 容斥原理
 [Problem - C - Codeforces](https://codeforces.com/contest/2204/problem/C)
-![[Pasted image 20260506164935.png]]
+![](image/Pasted%20image%2020260506164935.png)
 题意： 三个人，每个人给一个数字abc，每个人在自己数字的倍数的天数时， 会去打水，这一天如果只有一个人那么可以有6升，两个则每个人3升，三个则没人2升
 
 要求输出 m 天之后，每个人各自有多少水
@@ -404,7 +404,7 @@ void ap() {
 }
 ```
 
-![[Pasted image 20260506165315.png]]
+![](image/Pasted%20image%2020260506165315.png)
 每个圈是每个人各自会去的天数，那么显然，交集就代表着这几天会同时去
 容斥原理的关键就是画出图
 
@@ -413,7 +413,7 @@ void ap() {
 
 # 贪心 | 括号序列
 [Problem - C - Codeforces](https://codeforces.com/contest/2224/problem/C)
-![[Pasted image 20260507140025.png]]
+![](image/Pasted%20image%2020260507140025.png)
 
 ```c++
 void ap() {
@@ -447,7 +447,7 @@ void ap() {
 
 # 二分 | 
 [Problem - E - Codeforces](https://codeforces.com/contest/2167/problem/E)
-![[Pasted image 20260514152336.png]]
+![](image/Pasted%20image%2020260514152336.png)
 ```c++
 void ap() {
 	int n, k, x; cin >> n >> k >> x;
@@ -488,7 +488,7 @@ void ap() {
 
 # 异或 | 博弈
 [Problem - C1 - Codeforces](https://codeforces.com/contest/2171/problem/C1)
-![[Pasted image 20260516151625.png]]
+![](image/Pasted%20image%2020260516151625.png)
 ```c++
 void ap() {
 	int n; cin >> n;
@@ -520,12 +520,12 @@ void ap() {
 }
 ```
 
-![[Pasted image 20260516151740.png]]
+![](image/Pasted%20image%2020260516151740.png)
 
 
 hard：将其看成每一位来看，就是ez。最高位的power最大，所以只用看最高位的ez版本
 [Problem - C2 - Codeforces](https://codeforces.com/contest/2171/problem/C2)
-![[Pasted image 20260516161050.png]]
+![](image/Pasted%20image%2020260516161050.png)
 hard版本只是不再是0, 1数。
 最终需要比较的是异或值的大小，那么最高位大的一定大
 所以我们可以从最高位看起
@@ -609,7 +609,7 @@ c0 ^ c1 ^ c2 ^ ... c_last ^ 0 ^ 0... = 1
 # 周期旋转 | 下标映射 + 前缀和
 [Problem - F - Codeforces](https://codeforces.com/contest/2009/problem/F)
 1700
-![[Pasted image 20260518171916.png]]
+![](image/Pasted%20image%2020260518171916.png)
 ```c++
 void ap() {
 	int n, q; cin >> n >> q;
@@ -650,7 +650,7 @@ l %= n, r %= n; 表示l ，r 分别在一个块内的下标
 # 匹配消除 所需最小次数 | 枚举分割点 or 前后缀分解 + 正难则反
 
 [Problem - B - Codeforces](https://codeforces.com/contest/2230/problem/B)
-![[Pasted image 20260520202645.png]]
+![](image/Pasted%20image%2020260520202645.png)
 ```c++
 void ap() {
 	string s; cin >> s;
@@ -737,7 +737,7 @@ void ap() {
 
 #  贪心 构造 | 局部最优 - 全局最优
 [Problem - C2 - Codeforces](https://codeforces.com/contest/2229/problem/C2)
-![[Pasted image 20260525190728.png]]
+![](image/Pasted%20image%2020260525190728.png)
 ```c++
 void ap() {
 	int n; cin >> n;

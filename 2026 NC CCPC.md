@@ -1,7 +1,7 @@
 # K.拯救猫猫
 [拯救猫猫 - 题目详情 - HydroOJ](https://hydro.ac/d/HBCPC2026/p/HBCPC2026M)
-![[Pasted image 20260528135751.png]]
-![[Pasted image 20260528135812.png]]
+![](image/Pasted%20image%2020260528135751.png)
+![](image/Pasted%20image%2020260528135812.png)
 ## 思路：“可撤销功能”的普通并查集
 - 第一次遍历：找到起点，终点并记录下来。找到dog并存储在数组中，因为就是按顺序找所以不用排序
 - 遍历dog，将其视线标记，预处理其视线

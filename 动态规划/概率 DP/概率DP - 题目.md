@@ -1,7 +1,7 @@
 [I-冰淇淋大危机_第七届武汉纺织大学ACM程序设计竞赛(同步赛）](https://ac.nowcoder.com/acm/contest/136171/I)
 
-![[Pasted image 20260607151514.png]]
-![[Pasted image 20260607151555.png]]
+![](../../image/Pasted%20image%2020260607151514.png)
+![](../../image/Pasted%20image%2020260607151555.png)
 ```c++
 const int MOD = 998244353;
 

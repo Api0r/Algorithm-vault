@@ -1,5 +1,5 @@
 [E-镜像_牛客周赛 Round 132](https://ac.nowcoder.com/acm/contest/128672/E)
-![[Pasted image 20260319114502.png]]```
+![](image/Pasted%20image%2020260319114502.png)```
 ```c++
 void solve() {
 	int a, b, k; cin >> a >> b >> k;
