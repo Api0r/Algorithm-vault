@@ -36,7 +36,12 @@ The vault is organized by algorithm/topic, not by problem source:
 - **Math**: `$...$` inline, `$$...$$` block (LaTeX notation)
 - **Code blocks**: ` ```c++ ` with full competitive-programming style
 - **Problem references**: links to OJ platforms (Codeforces, HydroOJ, 牛客, Luogu, etc.)
-- **Images**: `![[Pasted image YYYYMMDDHHMMSS.png]]` for screenshots, stored in `image/`
+- **Images**: `![](image/Pasted%20image%20YYYYMMDDHHMMSS.png)` for screenshots, stored in `image/` — use **standard Markdown** syntax (not `![[wikilink]]`) so images render on GitHub. The relative path prefix varies by note depth:
+  - Root notes: `image/Pasted%20image%20...`
+  - 1-level deep: `../image/Pasted%20image%20...`
+  - 2-level deep: `../../image/Pasted%20image%20...`
+  - Spaces in filenames must be URL-encoded as `%20`
+  - **Git workflow**: When committing note changes, always `git add` the corresponding image files together with the `.md` files — otherwise GitHub will show broken image links. New images (not previously tracked) require explicit `git add`, unlike already-tracked `.md` files which auto-detect changes.
 - **Inline code/variables**: wrap variable expressions like `` `pa[x][i]` ``, `` `depth[y]` ``, `` `dp[x ^ i]` `` in backticks — prevents Obsidian's Markdown parser from treating `[x][i]` as a reference link (which would render `pa[x][0]` as `pax`)
 - **Markdown beautification** (for readable, structured notes):
   - `# Title` at the top of every note
