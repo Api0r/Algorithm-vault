@@ -27,7 +27,7 @@ $intervals[j][1] \lt intervals[i][0]$
 $intervals[j][1] \le intervals[i][0]$
 $intervals[j][1] \ll intervals[i][0]$
 
-[[MarkDown]]
+[MarkDown](MarkDown.md)
 
 `>`
 >Apior

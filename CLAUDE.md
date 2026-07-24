@@ -32,7 +32,7 @@ The vault is organized by algorithm/topic, not by problem source:
 ## Note Format
 
 - **Frontmatter**: none (plain Markdown)
-- **Internal links**: `[[note-name]]` or `[[folder/note-name]]`
+- **Internal links**: `[note-name](note-name.md)` or `[note-name](folder/note-name.md)`
 - **Math**: `$...$` inline, `$$...$$` block (LaTeX notation)
 - **Code blocks**: ` ```c++ ` with full competitive-programming style
 - **Problem references**: links to OJ platforms (Codeforces, HydroOJ, 牛客, Luogu, etc.)
