@@ -34,7 +34,7 @@ The vault is organized by algorithm/topic, not by problem source:
 - **Frontmatter**: none (plain Markdown)
 - **Internal links**: `[note-name](note-name.md)` or `[note-name](folder/note-name.md)`
 - **Math**: `$...$` inline, `$$...$$` block (LaTeX notation)
-- **Code blocks**: ` ```c++ ` with full competitive-programming style
+- **Code blocks**: ` ```c++ ` with full competitive-programming style — do NOT add a separate `C++` text label above the code block; the language is already declared by the fenced ```c++ marker
 - **Problem references**: links to OJ platforms (Codeforces, HydroOJ, 牛客, Luogu, etc.)
 - **Images**: `![](image/Pasted%20image%20YYYYMMDDHHMMSS.png)` for screenshots, stored in `image/` — use **standard Markdown** syntax (not `![[wikilink]]`) so images render on GitHub. The relative path prefix varies by note depth:
   - Root notes: `image/Pasted%20image%20...`
