@@ -1,38 +1,42 @@
-# 📚 Algorithm Vault (算法笔记库)
+<div align="right">
+  <b>English</b> | <a href="README.md">简体中文</a>
+</div>
 
-> 基于 **Obsidian** 构建的个人算法与数据结构知识库，涵盖核心原理、经典题解、竞赛模板与 C++ 代码实现。
+# 📚 Algorithm Vault
 
----
-
-## 🌟 仓库简介
-
-本项目是我在日常学习、算法竞赛与刷题过程中沉淀的知识库。采用 Obsidian 进行网状知识管理，旨在理清算法脉络、沉淀思维模型与代码模板。
-
-- **核心原理**：通俗易懂的算法原理剖析、推导与复杂度分析。
-- **题目精析**：各大 OJ（Codeforces / AtCoder / 力扣 / 洛谷 / 牛客等）精选题目与详细复盘。
-- **代码模板**：经过验证的高性能 C++ 模板与实现细节。
-- **网状知识体系**：基于双向链接（Backlinks），方便在相关算法与题型间跳转穿梭。
+> A personal algorithm and data structure knowledge base built with **Obsidian**, featuring in-depth theoretical breakdowns, curated problem walk-throughs, competitive programming templates, and modern C++ implementations.
 
 ---
 
-## 🖥️ 最佳阅读体验（推荐）
+## 🌟 Overview
 
-由于笔记基于 Markdown 及 Obsidian 特性（双向链接、标签、Callout 标注、图谱等）编写，**强烈建议下载到本地通过 Obsidian 打开**以获得最佳排版与交互体验：
+This repository is a consolidated knowledge base accumulated throughout my algorithm learning journey, competitive programming practice, and problem-solving sessions. Powered by Obsidian's networked note-taking paradigm, it aims to clarify algorithmic concepts, build mental models, and organize high-performance code templates.
 
-1. 点击右上角的 **`Code` -> `Download ZIP`**（或直接通过 `git clone` 克隆）。
-2. 打开 [Obsidian](https://obsidian.md/) 软件。
-3. 选择 **“打开本地文件夹作为库” (Open folder as vault)**，选中本仓库根目录即可。
+- **Core Principles**: Clear explanations, rigorous mathematical derivations, and time/space complexity analysis.
+- **Curated Problem Walk-throughs**: In-depth breakdowns and post-mortems of selected problems across major Online Judges (Codeforces, AtCoder, LeetCode, Luogu, Nowcoder, etc.).
+- **Code Templates**: Battle-tested, optimized C++ templates with implementation nuances highlighted.
+- **Interconnected Knowledge Graph**: Leverages bidirectional links (Backlinks) for seamless navigation across related algorithms, concepts, and problem archetypes.
 
 ---
 
-## 🤝 交流与勘误
+## 🖥️ Recommended Reading Experience
 
-- 本笔记为个人学习总结，难免存在疏漏或理解偏差。
-- 如果发现文章中有任何 **原理错误、代码 Bug 或排版问题**，欢迎随时提交 **Issue** 或发起 **Pull Request**！
-- 如果这些笔记对你的算法学习有所帮助，欢迎点一个 ⭐️ **Star** 支持一下！
+Because these notes take full advantage of Markdown and Obsidian-native features (bidirectional links, tags, callout blocks, graph view, etc.), **it is strongly recommended to download this vault locally and open it with Obsidian** for the best layout and interactive experience:
+
+1. Click **`Code` -> `Download ZIP`** at the top right (or clone the repository using `git clone`).
+2. Open the [Obsidian](https://obsidian.md/) app.
+3. Select **"Open folder as vault"** and choose the root directory of this cloned/extracted repository.
+
+---
+
+## 🤝 Contributions & Errata
+
+- This vault represents my personal learning summary, so minor inaccuracies or misunderstandings may occasionally occur.
+- If you spot any **algorithmic mistakes, code bugs, typo errors, or formatting issues**, feel free to open an **Issue** or submit a **Pull Request**!
+- If you find this vault helpful for your algorithm study, giving it a ⭐️ **Star** would be greatly appreciated!
 
 ---
 
 ## 📜 License
 
-本项目基于 [MIT License](LICENSE) 开源（或根据你的偏好修改）。
+This project is licensed under the [MIT License](LICENSE) (or choose your preferred license).
