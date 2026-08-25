@@ -53,6 +53,18 @@ The vault is organized by algorithm/topic, not by problem source:
   - Use `**bold**` for key terms being defined or emphasized (e.g. **异或空间线性基**)
   - Insert spaces between CJK and alphanumeric characters for readability (e.g. `非 0` not `非0`)
   - **Whitespace hygiene**: use single blank lines to separate content blocks (headings, code blocks, lists, paragraphs) — never leave multiple consecutive blank lines. Strip trailing whitespace from every line. Keep blank lines *inside* code blocks intact (they are part of the code). Preserve a blank line before/after headings and code blocks so Markdown renders correctly.
+  - **Collapsible full-code templates**: when a note begins with a long complete C++ template (100+ lines), wrap it in a collapsible Obsidian Callout so the Reading View defaults to collapsed:
+    ```
+    (blank line — required so Obsidian treats the callout as collapsed by default)
+
+    > [!abstract]- 📎 完整代码模板（点击展开）
+    >
+    > ```c++
+    > ... 完整代码 ...
+    > ```
+    >
+    ```
+    Rules: every line of the callout (including code fences) is prefixed with `> `. The note MUST start with a blank line before the callout, otherwise Obsidian expands it by default. Do NOT use `<details>` for this purpose — it does not render reliably in Obsidian and breaks code highlighting.
   - **When pasting from external sources**: LaTeX math formulas may have rendering artifacts — plain-text snippets get duplicated alongside the rendered formula (e.g. `E(X)ppE(X)​`). Always clean up: use proper `$$...$$` or `$...$` syntax, fix \frac patterns, and deduplicate repeated expressions.
 
 ## Common Tasks

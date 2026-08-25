@@ -1,0 +1,38 @@
+/* ============================================================
+   Callout 内代码块容器样式修复
+   ------------------------------------------------------------
+   只修复代码块的【容器】外观（背景、边框、圆角、内边距、滚动）。
+   绝不修改代码内部的 token 颜色 —— 语法高亮由 Obsidian 默认处理。
+   ============================================================ */
+
+/* Callout 内部的代码块容器 */
+.callout pre {
+  background-color: var(--code-background) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 6px !important;
+  padding: 12px 14px !important;
+  margin: 8px 0 !important;
+  overflow-x: auto !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box !important;
+}
+
+/* 代码基础字体 —— 仅设置字体系列和字号，不改颜色 */
+.callout pre code {
+  font-family: var(--font-monospace) !important;
+  font-size: var(--code-size) !important;
+  background-color: transparent !important;
+}
+
+/* 针对实时预览（源码模式）的同一容器修复 */
+.markdown-source-view .callout pre,
+.cm-callout pre {
+  background-color: var(--code-background) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 6px !important;
+  padding: 12px 14px !important;
+}
+
+/* 注意：不要在这里覆盖 .token 的颜色！
+   语法高亮颜色由 Obsidian 默认 CSS 提供，
+   任何 color 覆盖都会破坏代码着色。 */
