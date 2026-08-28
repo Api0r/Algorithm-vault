@@ -13,6 +13,15 @@ This is a C++ competitive programming (算法竞赛) knowledge vault for OI/ACM/
 - **Template pattern**: `signed main() { ... }` with `int T_cases` loop calling `solve()`
 - **Data structures**: handwritten (dsu, segment tree, BIT, etc.) — rarely use STL containers beyond vector/string
 - **Build**: single-file compilation with `g++ -std=c++17 -O2` — no build system, no tests
+- **Template writing style** (follow this structure for data-structure templates):
+  - **Documentation header**: a `/* ... */` comment at the top of the struct explaining purpose, all public interfaces (1-indexed), and edge-case semantics (e.g. "非法 k 返回 n + 1")
+  - **Default template param**: `template <class T = int>` (or `= long long` for large values) so the common case needs no explicit type
+  - **Constructors**: `T() = default;` + `explicit T(args) { init(args); }` delegating to `init`
+  - **`init` method**: sets size fields and `assign`s internal arrays to `T{}` (zero-init)
+  - **Overloaded methods**: same name for related operations with different arity (e.g. `add(x, y, v)` single-point vs `add(a, b, c, d, v)` rectangle)
+  - **Early returns**: guard invalid ranges (`if (l > r) return;`, `if (a > c || b > d) return;`)
+  - **`std::` qualification**: use `std::vector`, `std::min`, `static_cast<T>` instead of raw C-style casts
+  - **Boundary clamping**: clamp queries (`x = std::min(x, n)`) and guard `<= 0`
 
 ## Vault Structure
 
