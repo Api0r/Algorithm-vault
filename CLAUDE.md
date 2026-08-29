@@ -62,6 +62,7 @@ The vault is organized by algorithm/topic, not by problem source:
   - Use `**bold**` for key terms being defined or emphasized (e.g. **异或空间线性基**)
   - Insert spaces between CJK and alphanumeric characters for readability (e.g. `非 0` not `非0`)
   - **Whitespace hygiene**: use single blank lines to separate content blocks (headings, code blocks, lists, paragraphs) — never leave multiple consecutive blank lines. Strip trailing whitespace from every line. Keep blank lines *inside* code blocks intact (they are part of the code). Preserve a blank line before/after headings and code blocks so Markdown renders correctly.
+  - **Code blocks default to expanded (no folding)**: when beautifying/formatting notes, do NOT wrap code blocks in collapsible Callouts or `<details>` unless the user explicitly asks for folding. Keep code blocks fully visible by default. The collapsible Callout pattern below is ONLY used when explicitly requested.
   - **Collapsible full-code templates**: when a note begins with a long complete C++ template (100+ lines), wrap it in a collapsible Obsidian Callout so the Reading View defaults to collapsed:
     ```
     (blank line — required so Obsidian treats the callout as collapsed by default)
