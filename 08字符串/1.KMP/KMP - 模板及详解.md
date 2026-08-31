@@ -96,6 +96,59 @@ struct KMP {
 KMP<int> kmp(pattern);
 ```
 
+
+```c++
+struct KMP {
+    string p;
+    vector<int> next;
+
+    explicit KMP(const string& s) : p(s) {
+        buildNext();
+    }
+
+    void buildNext() {
+        int m = p.size();
+        if (m == 0) return;
+
+        next.assign(m, 0);
+        next[0] = -1;
+        if (m == 1) return;
+
+        next[1] = 0;
+        int i = 2, cn = 0;
+        while (i < m) {
+            if (p[i - 1] == p[cn]) {
+                next[i++] = ++cn;
+            } else if (cn > 0) {
+                cn = next[cn];
+            } else {
+                next[i++] = 0;
+            }
+        }
+    }
+
+    // 查找首次出现的位置，找不到返回 -1
+    int findFirst(const string& s) const {
+        int n = s.size(), m = p.size();
+        if (m == 0) return 0;
+        if (n < m) return -1;
+
+        int x = 0, y = 0;
+        while (x < n && y < m) {
+            if (s[x] == p[y]) {
+                x++;
+                y++;
+            } else if (y == 0) {
+                x++;
+            } else {
+                y = next[y];
+            }
+        }
+        return y == m ? x - y : -1;
+    }
+};
+```
+
 这段代码实现了一个基于 **KMP 算法（Knuth-Morris-Pratt）** 的单模式串匹配模板，封装为结构体 `KMP`。其核心功能是**预处理模式串的前缀函数（Border 数组）**，并在目标文本串中**高效查找所有匹配的起始下标**。
 
 ### 1. 核心成员变量
