@@ -50,6 +50,50 @@ struct KMP {
 KMP kmp(pattern);
 ```
 
+
+```c++
+// 适配泛型/long long 的 KMP 模板
+template <typename T>
+struct KMP {
+    vector<T> p;
+    vector<int> pi;
+
+    explicit KMP(const vector<T>& s) : p(s) {
+        build();
+    }
+
+    void build() {
+        int n = p.size();
+        pi.assign(n, 0);
+        for (int i = 1, j = 0; i < n; ++i) {
+            while (j && p[i] != p[j]) j = pi[j - 1];
+            if (p[i] == p[j]) ++j;
+            pi[i] = j;
+        }
+    }
+
+    vector<int> ask(const vector<T>& s) const {
+        vector<int> a;
+        int n = s.size(), m = p.size();
+        if (!m) {
+            a.resize(n + 1);
+            iota(a.begin(), a.end(), 0);
+            return a;
+        }
+        for (int i = 0, j = 0; i < n; ++i) {
+            while (j && s[i] != p[j]) j = pi[j - 1];
+            if (s[i] == p[j]) ++j;
+            if (j == m) {
+                a.push_back(i - m + 1);
+                j = pi[j - 1];
+            }
+        }
+        return a;
+    }
+};
+```
+
+
 这段代码实现了一个基于 **KMP 算法（Knuth-Morris-Pratt）** 的单模式串匹配模板，封装为结构体 `KMP`。其核心功能是**预处理模式串的前缀函数（Border 数组）**，并在目标文本串中**高效查找所有匹配的起始下标**。
 
 ### 1. 核心成员变量
