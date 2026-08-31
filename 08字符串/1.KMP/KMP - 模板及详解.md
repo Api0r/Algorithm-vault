@@ -44,7 +44,6 @@ struct KMP {
     }
 };
 ```
-
 ```c++
 //初始化对象
 KMP kmp(pattern);
@@ -92,7 +91,10 @@ struct KMP {
     }
 };
 ```
-
+```c++
+//初始化对象
+KMP<int> kmp(pattern);
+```
 
 这段代码实现了一个基于 **KMP 算法（Knuth-Morris-Pratt）** 的单模式串匹配模板，封装为结构体 `KMP`。其核心功能是**预处理模式串的前缀函数（Border 数组）**，并在目标文本串中**高效查找所有匹配的起始下标**。
 
