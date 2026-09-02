@@ -1,3 +1,6 @@
+
+# 1.
+
 [I-冰淇淋大危机_第七届武汉纺织大学ACM程序设计竞赛(同步赛）](https://ac.nowcoder.com/acm/contest/136171/I)
 
 ![](../../image/Pasted%20image%2020260607151514.png)
@@ -65,3 +68,76 @@ void ap() {
 	return ;
 }
 ```
+
+
+
+# 2.概率DP + 矩阵快速幂加速
+
+[L-小L的游戏2_2026牛客寒假算法基础集训营6](https://ac.nowcoder.com/acm/contest/120566/L)
+
+如果z很小的情况
+代码如下
+```c++
+#include <bits/stdc++.h>  
+using namespace std;  
+#define int long long
+#define endl '\n'
+const int mod = 1e9 + 7;
+const int MOD = 998244353;
+
+const int MAXZ = 1000005;
+int dp[MAXZ][2]; // dp[i][0]: 小 L 到达 i 的概率; dp[i][1]: fallleaves01 到达 i 的概率
+
+void ap() {
+    int m1, m2, n1, n2, z, p, q;
+    if (!(cin >> m1 >> m2 >> n1 >> n2 >> z >> p >> q)) return;
+
+    int inv_p = (1 - p + MOD) % MOD;
+    int inv_q = (1 - q + MOD) % MOD;
+
+    // 初始化：起点为 0，小 L 第一步依赖 fallleaves01 在 0 位置
+    for (int i = 0; i <= z; ++i) {
+        dp[i][0] = dp[i][1] = 0;
+    }
+    dp[0][1] = 1;
+
+    // 线性 DP 递推
+    for (int i = 1; i <= z; ++i) {
+        // 小 L 的转移
+        int from_m1 = (i >= m1 ? dp[i - m1][1] : 0);
+        int from_m2 = (i >= m2 ? dp[i - m2][1] : 0);
+        dp[i][0] = (from_m1 * p % MOD + from_m2 * inv_p % MOD) % MOD;
+
+        // fallleaves01 的转移
+        int from_n1 = (i >= n1 ? dp[i - n1][0] : 0);
+        int from_n2 = (i >= n2 ? dp[i - n2][0] : 0);
+        dp[i][1] = (from_n1 * q % MOD + from_n2 * inv_q % MOD) % MOD;
+    }
+
+    // 统计小 L 一步跨越或到达 >= z 的总胜率
+    int ans = 0;
+    int t = max(m1, m2);
+    for (int i = max(0LL, z - t); i < z; ++i) {
+        if (i + m1 >= z) ans = (ans + dp[i][1] * p) % MOD;
+        if (i + m2 >= z) ans = (ans + dp[i][1] * inv_p) % MOD;
+    }
+
+    cout << ans << endl;
+    return;
+}
+
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int T = 1;
+//  cin >> T;
+    while (T--) {
+        ap();
+    } 
+    return 0;
+}
+```
+
+但是`1 ≤ z ≤ 1e18`
+所以需要矩阵快速幂加速dp
+
