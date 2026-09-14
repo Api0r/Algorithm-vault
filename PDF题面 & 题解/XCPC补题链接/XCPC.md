@@ -9,3 +9,7 @@ https://codeforces.com/contestInvitation/09f6ea8e6f4ea5b80a8c4eade945ba4a9176917
 https://qoj.ac/contest/4071
 
 https://qoj.ac/contest/4113
+
+
+2026贵州省赛
+https://codeforces.com/gym/106705
