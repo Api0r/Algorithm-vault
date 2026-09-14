@@ -15,3 +15,6 @@ https://qoj.ac/contest/4113
 https://codeforces.com/gym/106705
 
 ![](image/icpc-2026-guizhou-solution%201.pdf)
+
+[The 4th Universal Cup. Stage 9: Grand Prix of Jinan - 比赛主页 - 比赛 - QOJ.ac](https://qoj.ac/contest/2693)
+
