@@ -13,3 +13,5 @@ https://qoj.ac/contest/4113
 
 2026贵州省赛
 https://codeforces.com/gym/106705
+
+![](image/icpc-2026-guizhou-solution%201.pdf)
