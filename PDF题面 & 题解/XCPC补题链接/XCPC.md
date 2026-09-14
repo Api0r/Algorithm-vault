@@ -18,3 +18,7 @@ https://codeforces.com/gym/106705
 
 [The 4th Universal Cup. Stage 9: Grand Prix of Jinan - 比赛主页 - 比赛 - QOJ.ac](https://qoj.ac/contest/2693)
 
+[2025 CCPC 全国邀请赛（南昌）暨第二届江西省赛 - 比赛主页 - 比赛 - QOJ.ac](https://qoj.ac/contest/2521)
+
+https://codeforces.com/gym/106554
+
