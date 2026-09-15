@@ -4,13 +4,14 @@
   "title": "自查开发环境配置",
   "titleGenerationStatus": "success",
   "createdAt": 1782793046217,
-  "updatedAt": 1789454862382,
-  "lastResponseAt": 1789454862382,
-  "sessionId": null,
+  "updatedAt": 1789455980053,
+  "lastResponseAt": 1789455980053,
+  "sessionId": "5d1fb542-e264-4856-acae-ec3d5ec3082c",
   "providerState": {
-    "providerSessionId": "3a16d248-6a9b-4564-b3bf-0d70b0dcc7e9",
+    "providerSessionId": "5d1fb542-e264-4856-acae-ec3d5ec3082c",
     "previousProviderSessionIds": [
-      "98348b3b-84dd-4f15-b526-8b9916fd5ee0"
+      "98348b3b-84dd-4f15-b526-8b9916fd5ee0",
+      "3a16d248-6a9b-4564-b3bf-0d70b0dcc7e9"
     ],
     "subagentData": {
       "call_00_ncd65rXAeOGIV4yEVGff1931": {
@@ -580,12 +581,12 @@
   },
   "usage": {
     "model": "deepseek-v4-flash ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-pro ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro",
-    "inputTokens": 685,
+    "inputTokens": 790,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 419584,
+    "cacheReadInputTokens": 90880,
     "contextWindow": 200000,
-    "contextTokens": 420269,
-    "percentage": 100,
+    "contextTokens": 91670,
+    "percentage": 46,
     "contextWindowIsAuthoritative": true
   }
 }
