@@ -22,3 +22,4 @@ https://codeforces.com/gym/106705
 
 https://codeforces.com/gym/106554
 
+[The 10th Hebei Collegiate Programming Contest (CCPC 2026 河北省赛) - 比赛主页 - 比赛 - QOJ.ac](https://qoj.ac/contest/3933)
