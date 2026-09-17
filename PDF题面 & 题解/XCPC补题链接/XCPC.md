@@ -27,3 +27,6 @@ https://codeforces.com/gym/106554
 https://qoj.ac/contest/3727
 
 https://qoj.ac/contest/3799
+
+https://qoj.ac/contest/4121
+
