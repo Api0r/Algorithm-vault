@@ -8,6 +8,7 @@ https://codeforces.com/contestInvitation/09f6ea8e6f4ea5b80a8c4eade945ba4a9176917
  The 2026 ICPC Asia East Continent Online Contest
 https://qoj.ac/contest/4071
 
+https://codeforces.com/gym/106701
 https://qoj.ac/contest/4113
 
 
