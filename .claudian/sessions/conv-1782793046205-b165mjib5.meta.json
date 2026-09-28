@@ -4,8 +4,8 @@
   "title": "自查开发环境配置",
   "titleGenerationStatus": "success",
   "createdAt": 1782793046217,
-  "updatedAt": 1790595939502,
-  "lastResponseAt": 1790595939502,
+  "updatedAt": 1790599260070,
+  "lastResponseAt": 1790599260070,
   "sessionId": "5d1fb542-e264-4856-acae-ec3d5ec3082c",
   "providerState": {
     "providerSessionId": "5d1fb542-e264-4856-acae-ec3d5ec3082c",
@@ -581,12 +581,12 @@
   },
   "usage": {
     "model": "deepseek-v4-flash ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-pro ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro",
-    "inputTokens": 185,
+    "inputTokens": 493,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 107904,
+    "cacheReadInputTokens": 135808,
     "contextWindow": 200000,
-    "contextTokens": 108089,
-    "percentage": 54,
+    "contextTokens": 136301,
+    "percentage": 68,
     "contextWindowIsAuthoritative": true
   }
 }
