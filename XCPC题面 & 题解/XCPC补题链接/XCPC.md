@@ -31,3 +31,4 @@ https://qoj.ac/contest/3799
 
 https://qoj.ac/contest/4121
 
+https://qoj.ac/contest/3766
