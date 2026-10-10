@@ -2,6 +2,9 @@
 赛事题目归档
 [Problem Archive](https://cpc.csgrandeur.cn/csgoj/problemarchive)
 
+【腾讯文档】Cfz's Problems
+https://docs.qq.com/sheet/DT1JyZXV0WE9iSVVp
+
 https://codeforces.com/blog/entry/153335
 
 2024 ICPC贵州省赛链接
