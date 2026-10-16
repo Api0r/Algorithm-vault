@@ -7,6 +7,10 @@ https://docs.qq.com/sheet/DT1JyZXV0WE9iSVVp
 
 https://codeforces.com/blog/entry/153335
 
+
+https://codeforces.com/gyms
+
+
 2024 ICPC贵州省赛链接
 http://www.oj33.cn/contestrank.php?cid=1421
 2025 ICPC贵州省赛链接
