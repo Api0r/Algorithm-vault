@@ -46,3 +46,28 @@ https://qoj.ac/contest/2609
 https://qoj.ac/contest/2641
 
 https://qoj.ac/contest/3169
+
+过往的洛谷模拟赛：
+[【LGR-307】SCP 2026 第二轮（复赛 S 组）模拟 - 洛谷](https://www.luogu.com.cn/contest/358588)
+### 2025 年
+
+- J 组：[https://www.luogu.com.cn/contest/281663](https://www.luogu.com.cn/contest/281663)
+- S 组：[https://www.luogu.com.cn/contest/281662](https://www.luogu.com.cn/contest/281662)
+- NOIP：[https://www.luogu.com.cn/contest/289075](https://www.luogu.com.cn/contest/289075)
+
+### 2024 年
+
+- J 组：[https://www.luogu.com.cn/contest/200686](https://www.luogu.com.cn/contest/200686)
+- S 组：[https://www.luogu.com.cn/contest/200849](https://www.luogu.com.cn/contest/200849)
+
+### 2023 年
+
+- J 组：[https://www.luogu.com.cn/contest/125612](https://www.luogu.com.cn/contest/125612)
+- S 组：[https://www.luogu.com.cn/contest/136700](https://www.luogu.com.cn/contest/136700)
+- NOIP：[https://www.luogu.com.cn/contest/141594](https://www.luogu.com.cn/contest/141594)
+
+### 2022 年
+
+- J 组：[https://www.luogu.com.cn/contest/82487](https://www.luogu.com.cn/contest/82487)
+- S 组：[https://www.luogu.com.cn/contest/85210](https://www.luogu.com.cn/contest/85210)
+- NOIP：[https://www.luogu.com.cn/contest/91844](https://www.luogu.com.cn/contest/91844)
