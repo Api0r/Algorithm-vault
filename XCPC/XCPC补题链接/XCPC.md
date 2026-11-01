@@ -75,3 +75,19 @@ https://qoj.ac/contest/3169
 - J 组：[https://www.luogu.com.cn/contest/82487](https://www.luogu.com.cn/contest/82487)
 - S 组：[https://www.luogu.com.cn/contest/85210](https://www.luogu.com.cn/contest/85210)
 - NOIP：[https://www.luogu.com.cn/contest/91844](https://www.luogu.com.cn/contest/91844)
+
+
+
+The 2026 ICPC Asia Chengdu Regional Contest 补题
+加入团队：[https://qoj.ac/group/join/1CPC-S1ng_Dou_2OZ6](https://qoj.ac/group/join/1CPC-S1ng_Dou_2OZ6)
+比赛链接：[成都 2026 补题 - 比赛主页 - 比赛 - QOJ.ac](https://qoj.ac/contest/4600)
+想要补题或提前 VP 的选手可以使用 QOJ 或 UCup 账号访问团队链接后点进比赛进行补题。
+【请注意！】由于比赛会使用在 Universal Cup 中，因此请大家不要在公开场合传播补题链接、题解、通过代码等资料。
+【请注意！】如果你已经看过了题目，只想要补题，请不要使用 VP 功能！请不要使用 VP 功能！请不要使用 VP 功能！在之前的区域赛中出现了选手恶意使用 VP 功能（开场就交题）。滥用 VP 功能的选手将会被封禁账号。
+
+The 2026 ICPC Asia Xi’an Regional Contest 补题
+加入团队：[Join a group - QOJ.ac](https://qoj.ac/group/join/dx8fq!)
+比赛链接：[https://qoj.ac/contest/4580](https://qoj.ac/contest/4580)
+想要补题或提前 VP 的选手可以使用 QOJ 或 UCup 账号访问团队链接后点进比赛进行补题。
+【请注意！】由于比赛会使用在 Universal Cup 中，因此请大家不要在公开场合传播补题链接、题解、通过代码等资料。
+【请注意！】如果你已经看过了题目，只想要补题，请不要使用 VP 功能！请不要使用 VP 功能！请不要使用 VP 功能！在之前的区域赛中出现了选手恶意使用 VP 功能（开场就交题）。滥用 VP 功能的选手将会被封禁账号。
