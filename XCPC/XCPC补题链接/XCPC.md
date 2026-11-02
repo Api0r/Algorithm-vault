@@ -91,3 +91,8 @@ The 2026 ICPC Asia Xi’an Regional Contest 补题
 想要补题或提前 VP 的选手可以使用 QOJ 或 UCup 账号访问团队链接后点进比赛进行补题。
 【请注意！】由于比赛会使用在 Universal Cup 中，因此请大家不要在公开场合传播补题链接、题解、通过代码等资料。
 【请注意！】如果你已经看过了题目，只想要补题，请不要使用 VP 功能！请不要使用 VP 功能！请不要使用 VP 功能！在之前的区域赛中出现了选手恶意使用 VP 功能（开场就交题）。滥用 VP 功能的选手将会被封禁账号。
+
+
+The 2026 ICPC Asia Wuhan Regional Contest 补题：
+可以通过任何 QOJ/UCup 账号加入组 https://qoj.ac/group/join/q1ngyui5n0tbigcyanfi5h ，访问比赛 https://qoj.ac/contest/4616 进行补题。
+由于比赛将会被使用在 ucup，因此请大家不要将题目与补题链接分享到公开平台或是其他群组。参加了现场比赛的选手可以申请获得 ucup rating。
