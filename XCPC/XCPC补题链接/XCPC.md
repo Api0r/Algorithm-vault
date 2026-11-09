@@ -96,3 +96,8 @@ The 2026 ICPC Asia Xi’an Regional Contest 补题
 The 2026 ICPC Asia Wuhan Regional Contest 补题：
 可以通过任何 QOJ/UCup 账号加入组 https://qoj.ac/group/join/q1ngyui5n0tbigcyanfi5h ，访问比赛 https://qoj.ac/contest/4616 进行补题。
 由于比赛将会被使用在 ucup，因此请大家不要将题目与补题链接分享到公开平台或是其他群组。参加了现场比赛的选手可以申请获得 ucup rating。
+
+
+ICPC 2026 南京补题：
+可以通过任何 QOJ/UCup 账号加入组 https://qoj.ac/group/join/iCpc_a5ia_nankin9_r3gioNaI_ZO26 ，访问比赛 https://qoj.ac/contest/4686 进行补题。
+由于比赛可能将会被使用在 ucup，因此请大家不要将题目与补题链接分享到公开平台或是其他群组。
