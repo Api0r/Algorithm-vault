@@ -104,3 +104,8 @@ ICPC 2026 南京补题：
 
 
 https://codeforces.com/gym/106783
+
+
+CCPC 2026 荆州补题：
+可以通过任何 QOJ/UCup 账号加入组 https://qoj.ac/group/join/u7gZ9lAmIfJNNo0gpoXGAaHge6ZXFLxD  ，访问比赛 https://qoj.ac/contest/4706 进行补题。
+【！】由于比赛将会被使用在 ucup，因此请大家不要将题目与补题链接分享到【任何】公开平台或是其他【任何】群组。
